@@ -116,7 +116,7 @@ body {
 /* 🎥 Hero Section - Home            */
 /* ---------------------------------- */
 .home {
-  height: 40vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,4 +152,5 @@ body {
   margin-bottom: 2rem;
   line-height: 1.6;
 }
+
 
