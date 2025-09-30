@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PashuAI | Home</title>
+  <!-- <title>PashuAI - Cattle & Buffalo Breed Recognition</title> -->
+  <meta name="google-site-verification" content="hTFm3WGwrJRe_BNdpuxaM2HHzIOvUp5sYasqSaLZeqQ" />
+  
+  <!-- 🔍 SEO Meta Tags -->
+  <meta name="description" content="PashuAI – AI-powered image-based breed recognition system for cattle and buffaloes to support the Bharat Pashudhan App." />
+  <meta name="keywords" content="PashuAI, cattle breed recognition, buffalo breed recognition, AI breed classifier, Bharat Pashudhan App, animal breed identification" />
+  <meta name="author" content="Almighty Coders" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- 🌐 Open Graph Tags (for social previews & search) -->
+  <meta property="og:title" content="PashuAI – AI Breed Recognition for Cattle & Buffaloes" />
+  <meta property="og:description" content="Automated breed identification using AI and image analysis to improve data accuracy for the Bharat Pashudhan App." />
+  <meta property="og:image" content="https://kartikchoundiye.github.io/pashuai/preview.png" />
+  <meta property="og:url" content="https://kartikchoundiye.github.io/pashuai/" />
+  <meta property="og:type" content="website" />
+  
+  <!-- 🌟 Favicon -->
+  <link rel="icon" type="image/png" href="assets/preview.png" />
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/home.css" />
+  <link rel="stylesheet" href="style/footer.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <!-- Include Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- 🐄 Home Hero Section -->
+      <section id="home">
+        <div class="home">
+          <img src="assets/PashuAI_home_image.png" alt="Cattle and Buffalo Breed Recognition" class="bg-image" />    
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features-section">
+        <h2>Why Choose PashuAI?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <img src="assets/offline_icon.png" alt="Offline Functionality" />
+            <h3>Offline Functionality</h3>
+            <p>Latest AI tech runs locally on your device. No constant internet needed, ensuring privacy and speed.</p>
+          </div>
+
+          <div class="feature-card">
+            <img src="assets/privacy_icon.png" alt="Local Data Privacy" />
+            <h3>Local Data Privacy</h3>
+            <p>Your data stays with you. No cloud uploads unless you choose to sync.</p>
+          </div>
+
+          <div class="feature-card">
+            <img src="assets/multilingual_icon.png" alt="Multilingual Support" />
+            <h3>Multilingual Support</h3>
+            <p>Available in multiple Indian languages for easy use by farmers and field workers.</p>
+          </div>
+
+          <div class="feature-card">
+            <img src="assets/health_icon.png" alt="Health Monitoring" />
+            <h3>Health Monitoring</h3>
+            <p>Early alerts on cattle health and heat detection powered by AI analytics.</p>
+          </div>
+
+          <div class="feature-card">
+            <img src="assets/analytics_icon.png" alt="Real-Time Analytics" />
+            <h3>Real-Time Analytics</h3>
+            <p>Comprehensive insights on herd management and breed distribution at your fingertips.</p>
+          </div>
+
+          <div class="feature-card">
+            <img src="assets/scalable_icon.png" alt="Scalable Solution" />
+            <h3>Scalable & Customizable</h3>
+            <p>Enterprise-ready solution that grows with your farm's needs.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section class="how-it-works">
+        <h2>How Our Solution Works</h2>
+        <div class="steps-container">
+          <div class="step-card">
+            <img src="assets/camera_icon.png" alt="Take or Upload Image" />
+            <h3>1. Capture or Upload</h3>
+            <p>Take a photo of the animal or upload an existing image.</p>
+          </div>
+
+          <div class="step-card">
+            <img src="assets/ai_icon.png" alt="AI Breed Identification" />
+            <h3>2. AI Breed Identification</h3>
+            <p>AI model processes the image locally and identifies the breed in near real-time.</p>
+          </div>
+
+          <div class="step-card">
+            <img src="assets/report_icon.png" alt="Get Reports & Insights" />
+            <h3>3. Receive Reports</h3>
+            <p>View detailed breed information, health monitoring, and analytics on the device.</p>
+          </div>
+
+          <div class="step-card">
+            <img src="assets/sync_icon.png" alt="Data Sync & Management" />
+            <h3>4. Sync & Manage Data</h3>
+            <p>Optionally sync your data with the cloud for backup and cross-device access.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Include footer -->
+    <div id="footer-placeholder"></div>
+  </div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+      });
+
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PashuAI | Breed Catalog</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+     <link rel="stylesheet" href="style/style.css" />
+     <link rel="stylesheet" href="style/breed_catalog.css" />
+     <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+  <div class="page-wrapper">
+
+  <!-- Include Navbar -->
+    <div id="navbar-placeholder"></div>
+    
+  <!-- Main Content Area -->
+   <main class="main-content">
+
+  <main class="breed-catalog-main">
+    <h1>Breed Catalog</h1>
+    <section class="search-filter">
+      <input type="search" id="breedSearch" placeholder="Search breeds by name, species, traits..." />
+      <!-- <label for="speciesFilter">Filter by Species:</label> -->
+      <select id="speciesFilter" title="Filter by Species">
+        <option value="">All Species</option>
+        <option value="cattle">Cattle</option>
+        <option value="buffalo">Buffalo</option>
+      </select>
+      <button id="clearFilters">Clear</button>
+    </section>
+
+    <section class="breed-list" aria-live="polite">
+      <!-- Dynamically loaded breeds will appear here -->
+    </section>
+  </main>
+
+</main>
+
+  <!-- Include footer -->
+    <div id="footer-placeholder"></div>
+</div>
+
+<script src="js/breed_catalog.js"></script> <!-- For filtering and dynamic list -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+      });
+
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  });
+</script>
+
+</body>
+
+</html>

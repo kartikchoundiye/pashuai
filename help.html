@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PashuAI | Help</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+  <div class="page-wrapper">
+   <!-- Include Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Your page content goes here -->
+    </main>
+
+  <!-- Include footer -->
+    <div id="footer-placeholder"></div>
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+      });
+
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  });
+</script>
+
+</body>
+
+</html>

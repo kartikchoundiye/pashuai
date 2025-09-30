@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PashuAI | Breed ID</title>    
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/breed_id.css" />
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+  <div class="page-wrapper">
+  <!-- Include Navbar -->
+    <div id="navbar-placeholder"></div>
+
+  <!-- Main Content Section -->
+   <main class="main-content">
+  <section class="breed-id-main">
+
+    <!-- 🐄 Hero Section -->
+    <section class="hero-section">
+      <img src="assets/breed_banner.jpg" alt="Breed Identification Banner" class="hero-image" />
+      <div class="hero-text">
+        <h1>Breed Identification Made Easy</h1>
+        <p>Real-time AI-powered recognition of Indian cattle and buffalo breeds — even offline!</p>
+      </div>
+    </section>
+
+    <!-- 📸 Upload Section -->
+    <section class="upload-section">
+      <h2>Upload or Capture Animal Image</h2>
+      <p>Ensure clear visibility of the animal’s head, body patterns, and posture.</p>
+
+      <div class="upload-controls">
+        <label for="imageInput">Upload Image:</label>
+        <input type="file" accept="image/*" id="imageInput" />
+        <button id="captureButton" onclick="startCamera()">📷 Capture Photo</button>
+      </div>
+
+      <div id="previewContainer" class="preview-container">
+        <!-- Image preview will appear here -->
+      </div>
+
+      <button id="identifyButton" disabled>🔍 Identify Breed</button>
+    </section>
+
+    <!-- 🧠 Result Display -->
+    <section class="result-section" aria-live="polite">
+      <h2>Breed Identification Result</h2>
+      <div id="resultDisplay" class="result-display">
+        <!-- AI result will be shown here -->
+      </div>
+    </section>
+
+    <!-- 📋 Guidelines Section -->
+    <section class="guidelines-section">
+      <h2>Image Capture Guidelines</h2>
+      <ul>
+        <li>Use natural daylight for clarity</li>
+        <li>Focus on head, horns, and body patterns</li>
+        <li>Avoid cluttered or dark backgrounds</li>
+        <li>Capture side and front angles if possible</li>
+      </ul>
+      <img src="assets/guideline_sample.jpg" alt="Sample Guideline Image" class="guideline-image" />
+    </section>
+
+    <!-- 🐃 Supported Breeds Section -->
+    <section class="support-breeds-section">
+      <h2>Supported Breeds</h2>
+      <p>Includes indigenous Indian cattle breeds, crossbreeds, and buffalo species.</p>
+      <p>Multi-species support ensures accurate classification across cattle and buffalo types.</p>
+      <img src="assets/breed_grid.jpg" alt="Supported Breeds Grid" class="breed-grid-image" />
+    </section>
+
+  </section>
+</main>
+   
+
+<!-- Include footer -->
+    <div id="footer-placeholder"></div>
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+      });
+
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  });
+</script>
+
+<script src="js/breed_id.js"></script> <!-- optional interactivity (camera, processing) -->
+
+</body>
+
+</html>
