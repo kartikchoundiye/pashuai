@@ -1,0 +1,123 @@
+/* ----------------------------- */
+/* 🐄 Breed ID Page Styling      */
+/* ----------------------------- */
+
+.breed-id-main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 🐄 Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.hero-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.hero-text h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #00695c;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* 📸 Upload Section */
+.upload-section {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+.upload-controls {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+#imageInput, #captureButton {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+#identifyButton {
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  background-color: #00695c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#identifyButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* 🧠 Result Section */
+.result-section {
+  background: #e0f2f1;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+.result-display {
+  font-size: 1.2rem;
+  color: #004d40;
+  font-weight: bold;
+}
+
+/* 📋 Guidelines Section */
+.guidelines-section {
+  background: #fff3e0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+.guidelines-section ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+.guideline-image {
+  margin-top: 1rem;
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 🐃 Supported Breeds Section */
+.support-breeds-section {
+  background: #f1f8e9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+.breed-grid-image {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .upload-controls {
+    flex-direction: column;
+  }
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+}

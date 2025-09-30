@@ -1,0 +1,129 @@
+/* Main container */
+.breed-catalog-main {
+  flex-grow: 1;
+  max-width: 1200px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+}
+
+/* Page title */
+.breed-catalog-main h1 {
+  font-size: 2.7rem;
+  color: #004d40;
+  margin-bottom: 25px;
+}
+
+/* Search and filter section */
+.search-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.search-filter input[type="search"] {
+  flex: 2 1 300px;
+  padding: 12px 18px;
+  border: 2px solid #004d40;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.search-filter select {
+  flex: 1 1 150px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 2px solid #004d40;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.search-filter button {
+  flex: 0 0 100px;
+  background-color: #00796b;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-filter button:hover {
+  background-color: #004d40;
+}
+
+/* Breed list container */
+.breed-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Single breed card */
+.breed-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.05);
+  padding: 20px 15px 25px;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.breed-card:hover {
+  box-shadow: 0 0 18px rgba(0, 121, 107, 0.7);
+}
+
+.breed-img {
+  height: 150px;
+  width: 100%;
+  max-width: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.breed-details {
+  text-align: center;
+  width: 100%;
+}
+
+.breed-name {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #004d40;
+  margin-bottom: 8px;
+}
+
+.breed-species {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #00796b;
+  margin-bottom: 8px;
+}
+
+.breed-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .search-filter {
+    flex-direction: column;
+  }
+  .search-filter input,
+  .search-filter select,
+  .search-filter button {
+    flex: 1 1 100%;
+  }
+  .breed-card {
+    max-width: 100%;
+  }
+}

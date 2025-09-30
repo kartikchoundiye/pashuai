@@ -1,0 +1,162 @@
+/* ---------------------------------- */
+/* 🌐 Font and Global Defaults        */
+/* ---------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Crimson Text', serif;
+  scroll-behavior: smooth;
+  color:#333;
+}
+html {
+  scroll-padding-top: 85px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-x: hidden;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f8;
+  /* min-height: 100vh; */
+  color: #333;
+  overflow-x: hidden;
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.main-content {
+  flex: 1;
+  min-height: 1px; /* ✅ Prevents collapsing on mobile */
+}
+
+main, .main-content {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* ---------------------------------- */
+/* 🔗 Header and Navigation Bar       */
+/* ---------------------------------- */
+.main-header {
+  /* background: #ffffff; */
+  background: linear-gradient(to right, #00695c, #26a69a); /* Teal gradient */
+  border-bottom: 2px solid #e5e5e5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.8rem 2rem;
+}
+
+/* Logo left aligned */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between logo and text */
+}
+.logo-img {
+  height: 65px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.site-name {
+  font-size: 1.8rem;
+  font-weight: 900;
+  /* color: #ffffff; */
+  color: #f5f5f5; /* Softer white for better contrast */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  cursor: default;
+  letter-spacing: 1.2px;
+  /* Optional: subtle hover effect */
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+.site-name {
+  -webkit-user-select: none; /* Safari and Chrome */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE 10+ */
+  user-select: none;         /* Standard */
+}
+.site-name:hover {
+  color: #80cbc4;  /* a nice teal highlight */
+}
+
+/* Menu Items */
+.nav-menu {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  margin-left: 2rem;
+  flex: 1;
+}
+.nav-menu li {
+  display: flex;
+}
+.nav-link {
+  background-color: #ffffff;
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.4em 0.9em;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+  /* background: none; */
+}
+
+.nav-link:hover {
+  text-decoration: underline; 
+}
+.nav-menu a.active {
+  background-color: #004d40;
+  color: #ffcc80;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+.nav-link.active {
+  background-color: #ffffff; /* white box */
+  color: #e26913;
+  font-weight: bold;
+  border: 2px solid #00695c;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* login Button - right aligned */
+.nav-cta {
+  margin-left: auto;
+}
+.login {
+  background: #ff9800;
+  color: black;
+  font-weight: bold;
+  padding: 0.6rem 1.4rem;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.login:hover {
+  background: #e68a00;
+}
+
